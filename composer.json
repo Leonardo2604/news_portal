@@ -1,0 +1,12 @@
+{
+    "name": "leonardo/portal_noticias",
+    "description": "Um portal para gest\u0000o e apresenta\u0000\u0000o de noticias",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Leonardo Rangel dos Santos",
+            "email": "leonardorangel2604@gmail.com"
+        }
+    ],
+    "require": {}
+}
