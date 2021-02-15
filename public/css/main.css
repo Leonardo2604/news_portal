@@ -1,0 +1,170 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ============= Start ============= */
+
+body {
+    font-family: arial, helvetica, freesans, sans-serif;
+}
+
+.links-header {
+    background-color: #f3f3f3;
+}
+
+.links-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1360px;
+    margin: auto;
+}
+
+/* === nav block  === */
+    .nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav img {
+        padding-right: 7px;
+    }
+
+    .nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    /* nav items */
+        .nav .nav__link {
+            display: block;
+            padding: 12px 7px;
+            text-decoration: none;
+            color: #999;
+            font-size: 12px;
+            position: relative;
+        }
+
+        .nav .nav__link:hover {
+            color: #1063e0;
+        }
+    /* end nav items */
+
+    /* nav properties */
+        .nav .nav__link.nav__link--button {
+            padding: 4px 5px;
+            margin: 0px 10px;
+            box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+            background-color: #f3f3f3;
+            background-image: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0) 50%,rgba(0,0,0,0.07) 100%);
+            background-image: -moz-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0) 50%,rgba(0,0,0,0.07) 100%);
+            background-image: linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0) 50%,rgba(0,0,0,0.07) 100%);
+            -webkit-transition: background-color 150ms ease-in-out;
+            -moz-transition: background-color 150ms ease-in-out;
+            transition: background-color 150ms ease-in-out;
+            border-radius: 3px;
+        }
+
+        .nav .nav__link.nav__link--highlight {
+            font-size: 16px;
+            font-weight: bold;
+            padding-left: 0px;
+        }
+
+        .nav .nav__link.nav__link--highlight::before {
+            content: "|";
+            margin-right: 7px;
+            color: rgb(207, 207, 207);
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .nav .nav__link.nav__link--highlight:hover:after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0px;
+            height: 2px;
+            width: 80%;
+            margin-left: 11%;
+            background-color: black;
+        }
+
+        .nav .nav__link.nav__link--red {
+            color: #a80000;
+        }
+
+        .nav .nav__link.nav__link--green {
+            color: #06aa48;
+        }
+
+        .nav .nav__link.nav__link--orange {
+            color: #fe7f00;
+        }
+
+        .nav .nav__link.nav__link--blue {
+            color: #005cef;
+        }
+
+        .nav .nav__link.nav__link--red.nav__link--highlight:hover:after {
+            background-color: #a80000;
+        }
+
+        .nav .nav__link.nav__link--green.nav__link--highlight:hover:after {
+            background-color: #06aa48;
+        }
+
+        .nav .nav__link.nav__link--orange.nav__link--highlight:hover:after {
+            background-color: #fe7f00;
+        }
+
+        .nav .nav__link.nav__link--blue.nav__link--highlight:hover:after {
+            background-color: #005cef;
+        }
+
+        .nav .nav__link.nav__link--uppercase {
+            text-transform: uppercase;
+        }
+    /* end nav properties */
+/* === end nav block  === */
