@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . "/../../services/PostService.php";
+require __DIR__ . "/../../app/services/PostService.php";
 
 $postService = new PostService();
 $posts = $postService->all();
